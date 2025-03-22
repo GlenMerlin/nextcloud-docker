@@ -37,6 +37,7 @@ services:
       - TRUSTED_PROXIES=127.0.0.1
       - PHP_MEMORY_LIMIT=4G
       - PHP_UPLOAD_LIMIT=20G
+      - APACHE_BODY_LIMIT=0
       - REDIS_HOST=nextcloud-redis
       - REDIS_HOST_PASSWORD=[PASSWORD HERE]
     restart: unless-stopped
